@@ -1,0 +1,14 @@
+@import '../../shape.scss';
+
+.component{
+  @extend %circle;
+  text-align: center;
+  &.blinking {
+    animation: wrapper-blink 0.4s ease-in-out forwards;
+  }
+  .align-center{
+    @extend %align_center;
+    width: 160px;
+    height: 140px;
+  }
+}

@@ -1,0 +1,11 @@
+@import '../../shape.scss';
+
+.reducer{
+  @extend %square;
+  &.blinking {
+    animation: wrapper-blink 0.4s ease-in-out forwards;
+  }
+  .align-center{
+    @extend %align_center;
+  }
+}

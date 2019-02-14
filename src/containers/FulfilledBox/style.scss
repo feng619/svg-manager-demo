@@ -1,0 +1,29 @@
+@import './common.scss';
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: #f3f3f3;
+  .fulfilled-box {
+    @extend %shadow;
+    width: 990px;
+    height: 520px;
+    position: relative;
+    margin: 0 auto;
+    padding: 40px 40px 100px 40px;
+    background-color: #fcfcfc;
+    .client {
+      @extend %shadow;
+      width: 910px;
+      height: 200px;
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 40px 40px 100px 40px;
+      background-color: #f5f5f5;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+@import '../../style.scss';
+
+.request_btn{
+  padding: 12px;
+  margin-top: 6px;
+  border-radius: 10px;
+  border: none;
+  background: none;
+  background-color: $sui_green;
+  font-size: 16px;
+  color: #fcfcfc;
+  outline:none;
+  cursor: pointer;
+  transition: 0.8s;
+  &.rej {
+    background-color: $sui_red;
+    &:hover {
+      background-color: darken($sui_red, 10%);
+    }
+  }
+  &.disabled-true, &.rej.disabled-true {
+    background-color: $sui_grey;
+    cursor: default;
+    &:hover {
+      background-color: $sui_grey;
+    }
+  }
+  &:hover {
+    background-color: darken($sui_green, 10%);
+  }
+}

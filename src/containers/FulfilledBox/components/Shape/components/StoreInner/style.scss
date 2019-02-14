@@ -1,0 +1,18 @@
+@import '../../shape.scss';
+
+.store{
+  @extend %circle;
+  &.blinking {
+    animation: wrapper-blink 0.4s ease-in-out forwards;
+  }
+  .align-center{
+    @extend %align_center;
+    height: 130px;
+    h3{
+      text-align: center;
+    }
+    .store-data{
+      font-size: 14px;
+    }
+  }
+}

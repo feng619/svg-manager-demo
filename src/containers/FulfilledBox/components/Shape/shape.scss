@@ -1,0 +1,40 @@
+@import '../../common.scss';
+
+%circle{
+  @extend %shadow;
+  width: 200px;
+  height: 200px;
+  position: relative;
+  border-radius: 50%;
+  background-color: #fcfcfc;
+}
+
+%square{
+  @extend %shadow;
+  width: 120px;
+  height: 120px;
+  position: relative;
+  text-align: center;
+  background-color: #fcfcfc;
+}
+
+%align_center{
+  height: 42px;
+  position: absolute;
+  top: 0;left: 0;bottom: 0;right: 0;margin: auto;
+  h3{
+    margin: 10px;
+  }
+}
+
+@keyframes wrapper-blink {
+  0% {
+    border: 2px solid rgba(0,0,0,0.22);
+  }
+  50% {
+    border: 2px solid $sui_grey;
+  }
+  100% {
+    border: 2px solid rgba(0,0,0,0.22);
+  }
+}

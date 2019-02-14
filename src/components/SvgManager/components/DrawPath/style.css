@@ -1,0 +1,13 @@
+.path {
+  animation: svg-mamager-dash 0.8s linear forwards infinite;
+}
+
+.path2 {
+  animation: svg-mamager-dash 0.8s 0.3s linear forwards infinite;
+}
+
+@keyframes svg-mamager-dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}

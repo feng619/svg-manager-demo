@@ -1,0 +1,63 @@
+@import '../../shape.scss';
+
+.server{
+  @extend %circle;
+  margin: 0 0 40px 290px;
+  text-align: center;
+  &.req1, &.req2 {
+    border: 2px solid $sui_blue;
+  }
+  &.ful {
+    border: 2px solid $sui_green;
+  }
+  &.rej {
+    border: 2px solid $sui_red;
+  }
+  .align-center{
+    @extend %align_center;
+    height: 100px;
+    .server-msg{
+      font-size: 12px;
+    }
+    .spinner-wrapper{
+      height: 90px;
+      position: relative;
+      .spinner {
+        animation: spinner-rotate 2s linear infinite;
+        z-index: 2;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: -25px 0 0 -25px;
+        width: 50px;
+        height: 50px;
+        & .path {
+          stroke: $sui_blue;
+          stroke-linecap: round;
+          animation: spinner-dash 1.5s ease-in-out infinite;
+        }
+      }
+    }
+  }
+}
+
+@keyframes spinner-rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spinner-dash {
+  0% {
+    stroke-dasharray: 1, 150;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 90, 150;
+    stroke-dashoffset: -35;
+  }
+  100% {
+    stroke-dasharray: 90, 150;
+    stroke-dashoffset: -124;
+  }
+}

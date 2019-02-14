@@ -1,0 +1,24 @@
+@import '../../shape.scss';
+
+.action{
+  @extend %square;
+  &.blinking {
+    animation: wrapper-blink 0.4s ease-in-out forwards;
+  }
+  .align-center{
+    @extend %align_center;
+    .action-data{
+      font-size: 12px;
+      font-weight: 500;
+      &.TEST_PENDING{
+        color: $sui_blue;
+      }
+      &.TEST_FULFILLED{
+        color: $sui_green;
+      }
+      &.TEST_REJECTED{
+        color: $sui_red;
+      }
+    }
+  }
+}
