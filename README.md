@@ -4,6 +4,9 @@
 > In this case, I tried to illustrate the workflow of redux-promise-middleware by SvgManager.  
 > All suggestions are welcome. Thank you so much.
 
+##### &nbsp;
+
+##### Here is the [demo] on heroku.
 
 ##### &nbsp;
 
@@ -21,3 +24,5 @@ start developing
 ```sh
 $ npm start
 ```
+
+[demo]: https://svg-manager-demo.herokuapp.com
